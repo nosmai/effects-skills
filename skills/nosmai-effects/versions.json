@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "last_verified": "2026-09-24",
+  "platforms": {
+    "ios": {
+      "package": "NosmaiCameraSDK",
+      "version": "3.0.5",
+      "release_tag": "v3.0.5",
+      "minimum_ios": "15",
+      "architectures": [
+        "arm64"
+      ],
+      "source": {
+        "type": "github_release",
+        "repository": "nosmai/nosmai_effects_sdk_ios"
+      }
+    },
+    "android": {
+      "artifact": "nosmai-sdk-{version}.aar",
+      "version": "3.0.5",
+      "release_tag": "v3.0.5",
+      "minimum_api": 24,
+      "compile_sdk": 35,
+      "java": 11,
+      "abis": [
+        "arm64-v8a",
+        "armeabi-v7a"
+      ],
+      "source": {
+        "type": "github_release",
+        "repository": "nosmai/nosmai_effects_sdk_android"
+      }
+    },
+    "flutter": {
+      "package": "nosmai_effects_sdk",
+      "version": "1.0.3",
+      "minimum_flutter": "3.22",
+      "minimum_dart": "3",
+      "android_native_version": "3.0.5",
+      "ios_native_constraint": "~> 3.0.5",
+      "source": {
+        "type": "pub",
+        "package": "nosmai_effects_sdk"
+      }
+    },
+    "react_native": {
+      "package": "@nosmai/react-native-effects-sdk",
+      "version": "1.0.0",
+      "expo_range": ">=54.0.0 <55.0.0",
+      "react_native_range": ">=0.81.5 <0.82.0",
+      "react_range": ">=19.1.0 <20",
+      "node_minimum": "20.19.4",
+      "android_minimum_api": 24,
+      "android_compile_sdk": 36,
+      "android_java": 17,
+      "android_abis": [
+        "arm64-v8a"
+      ],
+      "ios_minimum": "15",
+      "native_android_version": "3.0.4",
+      "native_android_verification": "manual",
+      "native_ios_version": "3.0.4",
+      "source": {
+        "type": "npm",
+        "package": "@nosmai/react-native-effects-sdk"
+      }
+    },
+    "web": {
+      "package": "@nosmai/web-sdk",
+      "version": "0.2.0",
+      "status": "developer preview",
+      "archive": "nosmai-web-sdk-{version}.tgz",
+      "node_ranges": [
+        ">=20.19",
+        ">=22.12"
+      ],
+      "source": {
+        "type": "manual",
+        "reason": "Authorized preview archive is not published to a public registry."
+      }
+    }
+  }
+}

@@ -4,6 +4,7 @@ Use this reference for native Android projects and when diagnosing the native ho
 
 ## Verified baseline
 
+<!-- BEGIN GENERATED:version-android-baseline -->
 Last verified 24 September 2026:
 
 - Native SDK: `nosmai-sdk-3.0.5.aar`
@@ -13,11 +14,13 @@ Last verified 24 September 2026:
 - Supported native ABIs: `arm64-v8a` and `armeabi-v7a`
 - Runtime target: physical ARM Android device
 - Unsupported runtime targets: x86 and x86_64 emulators
+<!-- END GENERATED:version-android-baseline -->
 
 Check the [latest Android release](https://github.com/nosmai/nosmai_effects_sdk_android/releases/latest) before changing the version.
 
 ## Native installation
 
+<!-- BEGIN GENERATED:version-android-install -->
 Download the AAR and `SHA256SUMS` from the same official release. Verify the file before integration:
 
 ```sh
@@ -49,6 +52,7 @@ dependencies {
 ```
 
 This manual AAR step is for a native Android integration. A wrapper may resolve the AAR itself. Inspect the installed Flutter or React Native package before adding a second copy.
+<!-- END GENERATED:version-android-install -->
 
 ## Permissions
 

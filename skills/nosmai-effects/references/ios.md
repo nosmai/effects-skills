@@ -4,18 +4,21 @@ Use this reference for native iOS projects and for the iOS host side of Flutter 
 
 ## Verified baseline
 
+<!-- BEGIN GENERATED:version-ios-baseline -->
 Last verified 24 September 2026:
 
 - Native SDK: `NosmaiCameraSDK` `3.0.5`
 - Minimum deployment target: iOS 15
-- Runtime target: physical arm64 iPhone or iPad
+- Runtime target: physical `arm64` iPhone or iPad
 - Distribution: CocoaPods or the verified framework ZIP from the [official iOS release](https://github.com/nosmai/nosmai_effects_sdk_ios/releases/tag/v3.0.5)
 - Simulator: unsupported because the current framework has no simulator slice
+<!-- END GENERATED:version-ios-baseline -->
 
 Check [platform support](https://nosmai.com/docs/effects/platform-support/) and the [latest iOS release](https://github.com/nosmai/nosmai_effects_sdk_ios/releases/latest) before changing a version.
 
 ## Install
 
+<!-- BEGIN GENERATED:version-ios-install -->
 CocoaPods is preferred:
 
 ```ruby
@@ -28,6 +31,7 @@ end
 ```
 
 Run `pod install --repo-update` and open the generated `.xcworkspace`. Do not also embed a manual framework.
+<!-- END GENERATED:version-ios-install -->
 
 For manual installation, download `nosmai.framework.zip` and `SHA256SUMS` from the same release, verify them with `shasum -a 256 -c SHA256SUMS`, add the framework to the application target, and select **Embed & Sign**.
 

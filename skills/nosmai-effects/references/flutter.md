@@ -4,19 +4,22 @@ Use this reference for applications using the public `nosmai_effects_sdk` packag
 
 ## Verified baseline
 
+<!-- BEGIN GENERATED:version-flutter-baseline -->
 Last verified 24 September 2026:
 
 - Flutter package: `nosmai_effects_sdk` `1.0.3`
 - Flutter: 3.22 or later
 - Dart: 3 or later
-- Android: API 24+, physical `arm64-v8a` or `armeabi-v7a` device
-- iOS: iOS 15+, physical arm64 device
+- Android: API 24+, physical device using `arm64-v8a` or `armeabi-v7a`
+- iOS: iOS 15+, physical `arm64` device
 - Native dependencies used by the published package: Android `3.0.5`, iOS `NosmaiCameraSDK ~> 3.0.5`
+<!-- END GENERATED:version-flutter-baseline -->
 
 Verify the current version on [pub.dev](https://pub.dev/packages/nosmai_effects_sdk) before upgrading.
 
 ## Install
 
+<!-- BEGIN GENERATED:version-flutter-install -->
 ```sh
 flutter pub add nosmai_effects_sdk:^1.0.3
 flutter pub add permission_handler
@@ -31,6 +34,7 @@ platform :ios, '15.0'
 ```
 
 Add camera and internet permissions on Android, and `NSCameraUsageDescription` on iOS. Add microphone and photo-library permissions only for the features that need them.
+<!-- END GENERATED:version-flutter-install -->
 
 ## Initialize once
 

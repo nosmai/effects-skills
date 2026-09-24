@@ -8,6 +8,9 @@ This repository contains the `nosmai-effects` agent skill for integrating and tr
 skills/
 └── nosmai-effects/
     ├── SKILL.md
+    ├── versions.json
+    ├── scripts/
+    │   └── sync_versions.py
     └── references/
         ├── ios.md
         ├── android.md
@@ -34,7 +37,8 @@ Restart or reload the agent if it does not discover new skills automatically. In
 
 SDK versions change independently. The skill requires agents to verify the installed package and the current official release instead of assuming that a version embedded in an old guide is still current.
 
-The platform references were last verified on 24 September 2026 against:
+<!-- BEGIN GENERATED:version-readme -->
+The platform references were last verified on 24 September 2026. The generated snapshot below comes from [`skills/nosmai-effects/versions.json`](skills/nosmai-effects/versions.json):
 
 | Platform | Verified public release |
 | --- | --- |
@@ -43,8 +47,20 @@ The platform references were last verified on 24 September 2026 against:
 | Flutter | `nosmai_effects_sdk` `1.0.3` |
 | React Native | `@nosmai/react-native-effects-sdk` `1.0.0` |
 | Web | `0.2.0` developer preview, authorized archive |
+<!-- END GENERATED:version-readme -->
 
 Always check [Nosmai Effects platform support](https://nosmai.com/docs/effects/platform-support/) before publishing version, feature, ABI, or compatibility claims.
+
+## Release version update
+
+Update [`versions.json`](skills/nosmai-effects/versions.json), including `last_verified`, then regenerate every version-aware section:
+
+```sh
+python3 skills/nosmai-effects/scripts/sync_versions.py --write --verify-public
+python3 skills/nosmai-effects/scripts/sync_versions.py --check
+```
+
+The public check compares native GitHub releases, pub.dev, and npm. It also inspects published Flutter and React Native package metadata for declared native dependencies, platform requirements, peer ranges, and ABIs. The React Native host-owned Android AAR baseline and authorized Web preview have no machine-readable public registry record, so those values remain manual release checks. Commit the manifest and generated Markdown together. CI rejects stale generated sections and semantic versions written outside managed blocks, checks public releases on every change, and repeats the check weekly.
 
 ## Security
 

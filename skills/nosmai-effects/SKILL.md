@@ -19,14 +19,17 @@ Read only the reference needed for the target platform. Read multiple references
 
 For platform comparisons, start with the [platform support matrix](https://nosmai.com/docs/effects/platform-support/), then verify the current package or release before making version, ABI, size, or feature-parity claims.
 
+For installation, upgrade, compatibility, or release work, read [`versions.json`](versions.json) before the platform reference. It is the skill's single maintained version snapshot; do not copy version numbers from one platform guide into another.
+
 ## Source-of-truth order
 
 Nosmai releases independently across native SDKs and wrappers. Never infer compatibility from similar version numbers.
 
 1. Inspect the API and dependency metadata of the artifact actually installed in the project.
-2. Check the latest official registry entry or GitHub release for the same artifact.
-3. Use the matching Nosmai documentation page.
-4. If these disagree, do not silently combine instructions. Report the discrepancy and follow the installed artifact unless the user asks to upgrade.
+2. Read the matching record in [`versions.json`](versions.json).
+3. Check the latest official registry entry or GitHub release for the same artifact.
+4. Use the matching Nosmai documentation page.
+5. If these disagree, do not silently combine instructions. Report the discrepancy and follow the installed artifact unless the user asks to upgrade.
 
 Use only official sources:
 
@@ -35,6 +38,17 @@ Use only official sources:
 - [iOS releases](https://github.com/nosmai/nosmai_effects_sdk_ios/releases)
 - [Flutter package](https://pub.dev/packages/nosmai_effects_sdk)
 - [React Native package](https://www.npmjs.com/package/@nosmai/react-native-effects-sdk)
+
+## Release maintenance
+
+When a public SDK or wrapper is released, update the matching record and `last_verified` in [`versions.json`](versions.json). Do not hand-edit content between `BEGIN GENERATED` and `END GENERATED` comments. From the repository root, run:
+
+```sh
+python3 skills/nosmai-effects/scripts/sync_versions.py --write --verify-public
+python3 skills/nosmai-effects/scripts/sync_versions.py --check
+```
+
+The Web preview has no public registry check and must be confirmed from its authorized release record. Review wrapper-owned native versions and ABIs independently; a new native SDK release does not automatically change Flutter or React Native compatibility.
 
 ## Integration workflow
 

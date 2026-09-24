@@ -4,6 +4,7 @@ Use this reference for the authorized Nosmai Effects Web developer preview.
 
 ## Verified baseline
 
+<!-- BEGIN GENERATED:version-web-baseline -->
 Last verified 24 September 2026:
 
 - Web SDK: `0.2.0` developer preview
@@ -14,9 +15,11 @@ Last verified 24 September 2026:
 - Toolchain: Node.js 20.19+ or 22.12+ and an ESM-capable bundler
 
 The Web preview is not a public npm release. Do not replace the authorized archive with an unverified package that happens to use the same import name.
+<!-- END GENERATED:version-web-baseline -->
 
 ## Install
 
+<!-- BEGIN GENERATED:version-web-install -->
 Store the authorized archive in a private application-owned location and install it as a file dependency:
 
 ```sh
@@ -24,6 +27,7 @@ npm install ./vendor/nosmai-web-sdk-0.2.0.tgz
 ```
 
 Do not commit the archive, licensed effect packages, or a complete licence key to a public repository. Ensure the lockfile resolves the expected local archive.
+<!-- END GENERATED:version-web-install -->
 
 ## Browser and deployment requirements
 
@@ -58,7 +62,7 @@ const sdk = await NosmaiWebSDK.create({
   },
   license: {
     publicKeyPem: runtimeVerificationKey,
-    sdkVersion: '0.2.0',
+    sdkVersion: configuredSdkVersion,
   },
 })
 
@@ -76,7 +80,7 @@ Do not modify or unpack `first-effect.nosmai`. Serve the exact authorized packag
 
 ## Capability boundary
 
-Web `0.2.0` is a developer preview, not a claim of mobile feature parity.
+The current Web release is a developer preview, not a claim of mobile feature parity.
 
 - Compatible authored `.nosmai` packages render into the configured canvas.
 - Package parameters, face-aware effects, selected 3D content, triggers, and compatible background packages are preview capabilities.
