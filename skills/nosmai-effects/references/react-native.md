@@ -5,26 +5,26 @@ Use this reference for the public `@nosmai/react-native-effects-sdk` package, in
 ## Verified baseline
 
 <!-- BEGIN GENERATED:version-react-native-baseline -->
-Last verified 24 September 2026 from the published npm `1.0.0` artifact:
+Last verified 19 October 2026 from the published npm `2.0.1` artifact:
 
-- Package: `@nosmai/react-native-effects-sdk` `1.0.0`
+- Package: `@nosmai/react-native-effects-sdk` `2.0.1`
 - Expo: `>=54.0.0 <55.0.0` with a custom development or EAS build
 - React Native: `>=0.81.5 <0.82.0`
 - React: `>=19.1.0 <20`
 - Node.js: 20.19.4 or later
 - Architecture: New Architecture only, using TurboModules and Fabric
-- Android: API 24+, compile SDK 36, Java 17, physical `arm64-v8a` device
+- Android: API 24+, compile SDK 36, Java 17, physical `arm64-v8a` and `armeabi-v7a` device
 - iOS: iOS 15+, physical arm64 device
-- Native baseline in the published package: Android `3.0.4` and iOS `3.0.4`
+- Native baseline in the published package: Android `3.0.7` and iOS `3.0.7`
 
-The published `1.0.0` Android package supports `arm64-v8a`. Do not inherit ABI claims from the standalone native SDK; verify the exact npm artifact first.
+The published `2.0.1` Android package supports `arm64-v8a` and `armeabi-v7a`. Do not inherit ABI claims from the standalone native SDK; verify the exact npm artifact first.
 <!-- END GENERATED:version-react-native-baseline -->
 
 ## Install
 
 <!-- BEGIN GENERATED:version-react-native-install -->
 ```sh
-yarn add @nosmai/react-native-effects-sdk@1.0.0
+yarn add @nosmai/react-native-effects-sdk@2.0.1
 ```
 
 The npm package does not redistribute the proprietary Android AAR. Obtain the authorized AAR required by the package, verify it, place one copy at `android/app/libs/nosmai-release.aar`, and link it from the host app. Do not commit it to a public repository.

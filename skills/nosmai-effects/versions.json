@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "last_verified": "2026-09-24",
+  "last_verified": "2026-10-19",
   "platforms": {
     "ios": {
       "package": "NosmaiCameraSDK",
-      "version": "3.0.5",
-      "release_tag": "v3.0.5",
+      "version": "3.0.7",
+      "release_tag": "v3.0.7",
       "minimum_ios": "15",
       "architectures": [
         "arm64"
@@ -17,8 +17,8 @@
     },
     "android": {
       "artifact": "nosmai-sdk-{version}.aar",
-      "version": "3.0.5",
-      "release_tag": "v3.0.5",
+      "version": "3.0.7",
+      "release_tag": "v3.0.7",
       "minimum_api": 24,
       "compile_sdk": 35,
       "java": 11,
@@ -33,11 +33,11 @@
     },
     "flutter": {
       "package": "nosmai_effects_sdk",
-      "version": "1.0.3",
-      "minimum_flutter": "3.22",
+      "version": "2.0.2",
+      "minimum_flutter": "3.29",
       "minimum_dart": "3",
-      "android_native_version": "3.0.5",
-      "ios_native_constraint": "~> 3.0.5",
+      "android_native_version": "3.0.7",
+      "ios_native_constraint": "3.0.7",
       "source": {
         "type": "pub",
         "package": "nosmai_effects_sdk"
@@ -45,7 +45,7 @@
     },
     "react_native": {
       "package": "@nosmai/react-native-effects-sdk",
-      "version": "1.0.0",
+      "version": "2.0.1",
       "expo_range": ">=54.0.0 <55.0.0",
       "react_native_range": ">=0.81.5 <0.82.0",
       "react_range": ">=19.1.0 <20",
@@ -54,12 +54,13 @@
       "android_compile_sdk": 36,
       "android_java": 17,
       "android_abis": [
-        "arm64-v8a"
+        "arm64-v8a",
+        "armeabi-v7a"
       ],
       "ios_minimum": "15",
-      "native_android_version": "3.0.4",
+      "native_android_version": "3.0.7",
       "native_android_verification": "manual",
-      "native_ios_version": "3.0.4",
+      "native_ios_version": "3.0.7",
       "source": {
         "type": "npm",
         "package": "@nosmai/react-native-effects-sdk"

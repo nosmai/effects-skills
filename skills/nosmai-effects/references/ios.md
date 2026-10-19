@@ -5,12 +5,12 @@ Use this reference for native iOS projects and for the iOS host side of Flutter 
 ## Verified baseline
 
 <!-- BEGIN GENERATED:version-ios-baseline -->
-Last verified 24 September 2026:
+Last verified 19 October 2026:
 
-- Native SDK: `NosmaiCameraSDK` `3.0.5`
+- Native SDK: `NosmaiCameraSDK` `3.0.7`
 - Minimum deployment target: iOS 15
 - Runtime target: physical `arm64` iPhone or iPad
-- Distribution: CocoaPods or the verified framework ZIP from the [official iOS release](https://github.com/nosmai/nosmai_effects_sdk_ios/releases/tag/v3.0.5)
+- Distribution: CocoaPods or the verified framework ZIP from the [official iOS release](https://github.com/nosmai/nosmai_effects_sdk_ios/releases/tag/v3.0.7)
 - Simulator: unsupported because the current framework has no simulator slice
 <!-- END GENERATED:version-ios-baseline -->
 
@@ -26,7 +26,7 @@ platform :ios, '15.0'
 
 target 'CameraApp' do
   use_frameworks!
-  pod 'NosmaiCameraSDK', '3.0.5'
+  pod 'NosmaiCameraSDK', '3.0.7'
 end
 ```
 

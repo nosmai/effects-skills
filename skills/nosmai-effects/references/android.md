@@ -5,9 +5,9 @@ Use this reference for native Android projects and when diagnosing the native ho
 ## Verified baseline
 
 <!-- BEGIN GENERATED:version-android-baseline -->
-Last verified 24 September 2026:
+Last verified 19 October 2026:
 
-- Native SDK: `nosmai-sdk-3.0.5.aar`
+- Native SDK: `nosmai-sdk-3.0.7.aar`
 - Minimum Android API: 24
 - Compile SDK baseline: 35
 - Java bytecode compatibility: Java 11
@@ -27,7 +27,7 @@ Download the AAR and `SHA256SUMS` from the same official release. Verify the fil
 shasum -a 256 -c SHA256SUMS
 ```
 
-Place the verified file in the native app module, for example `app/libs/nosmai-sdk-3.0.5.aar`, and add it once:
+Place the verified file in the native app module, for example `app/libs/nosmai-sdk-3.0.7.aar`, and add it once:
 
 ```kotlin
 android {
@@ -47,7 +47,7 @@ android {
 }
 
 dependencies {
-    implementation(files("libs/nosmai-sdk-3.0.5.aar"))
+    implementation(files("libs/nosmai-sdk-3.0.7.aar"))
 }
 ```
 

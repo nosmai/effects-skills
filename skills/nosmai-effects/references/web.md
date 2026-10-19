@@ -5,7 +5,7 @@ Use this reference for the authorized Nosmai Effects Web developer preview.
 ## Verified baseline
 
 <!-- BEGIN GENERATED:version-web-baseline -->
-Last verified 24 September 2026:
+Last verified 19 October 2026:
 
 - Web SDK: `0.2.0` developer preview
 - Distribution: authorized `nosmai-web-sdk-0.2.0.tgz` archive

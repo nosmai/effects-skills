@@ -350,7 +350,7 @@ def verify_flutter_artifact(
         "flutter",
         "Android native version",
         files["gradle"],
-        r"com\.nosmai:nosmai-sdk:([^@\"']+)@aar",
+        r"^\s*def\s+nosmaiSdkVersion\s*=\s*['\"]([^'\"]+)['\"]",
         str(flutter["android_native_version"]),
     )
     errors += require_pattern(
@@ -456,7 +456,7 @@ def verify_react_native_artifact(
         "react_native",
         "iOS native constraint",
         files["podspec"],
-        r"s\.dependency\s+['\"]NosmaiCameraSDK['\"],\s*['\"]~>\s*([^'\"]+)['\"]",
+        r"s\.dependency\s+['\"]NosmaiCameraSDK['\"],\s*['\"](?:~>\s*)?([^'\"]+)['\"]",
         str(rn["native_ios_version"]),
     )
     errors += require_pattern(

@@ -38,14 +38,14 @@ Restart or reload the agent if it does not discover new skills automatically. In
 SDK versions change independently. The skill requires agents to verify the installed package and the current official release instead of assuming that a version embedded in an old guide is still current.
 
 <!-- BEGIN GENERATED:version-readme -->
-The platform references were last verified on 24 September 2026. The generated snapshot below comes from [`skills/nosmai-effects/versions.json`](skills/nosmai-effects/versions.json):
+The platform references were last verified on 19 October 2026. The generated snapshot below comes from [`skills/nosmai-effects/versions.json`](skills/nosmai-effects/versions.json):
 
 | Platform | Verified public release |
 | --- | --- |
-| iOS | `NosmaiCameraSDK` `3.0.5` |
-| Android | `nosmai-sdk-3.0.5.aar` |
-| Flutter | `nosmai_effects_sdk` `1.0.3` |
-| React Native | `@nosmai/react-native-effects-sdk` `1.0.0` |
+| iOS | `NosmaiCameraSDK` `3.0.7` |
+| Android | `nosmai-sdk-3.0.7.aar` |
+| Flutter | `nosmai_effects_sdk` `2.0.2` |
+| React Native | `@nosmai/react-native-effects-sdk` `2.0.1` |
 | Web | `0.2.0` developer preview, authorized archive |
 <!-- END GENERATED:version-readme -->
 

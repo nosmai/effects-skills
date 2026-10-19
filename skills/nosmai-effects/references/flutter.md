@@ -5,14 +5,14 @@ Use this reference for applications using the public `nosmai_effects_sdk` packag
 ## Verified baseline
 
 <!-- BEGIN GENERATED:version-flutter-baseline -->
-Last verified 24 September 2026:
+Last verified 19 October 2026:
 
-- Flutter package: `nosmai_effects_sdk` `1.0.3`
-- Flutter: 3.22 or later
+- Flutter package: `nosmai_effects_sdk` `2.0.2`
+- Flutter: 3.29 or later
 - Dart: 3 or later
 - Android: API 24+, physical device using `arm64-v8a` or `armeabi-v7a`
 - iOS: iOS 15+, physical `arm64` device
-- Native dependencies used by the published package: Android `3.0.5`, iOS `NosmaiCameraSDK ~> 3.0.5`
+- Native dependencies used by the published package: Android `3.0.7`, iOS `NosmaiCameraSDK 3.0.7`
 <!-- END GENERATED:version-flutter-baseline -->
 
 Verify the current version on [pub.dev](https://pub.dev/packages/nosmai_effects_sdk) before upgrading.
@@ -21,11 +21,11 @@ Verify the current version on [pub.dev](https://pub.dev/packages/nosmai_effects_
 
 <!-- BEGIN GENERATED:version-flutter-install -->
 ```sh
-flutter pub add nosmai_effects_sdk:^1.0.3
+flutter pub add nosmai_effects_sdk:^2.0.2
 flutter pub add permission_handler
 ```
 
-The published `1.0.3` package resolves its Android `3.0.5` AAR through the plugin's Gradle configuration and its iOS framework through CocoaPods. Do not add a manual `nosmai-release.aar` or framework copy on top of this package. If an older guide or existing project contains a manual copy, inspect the resolved dependency graph before removing or retaining it; the final application must contain exactly one native SDK version.
+The published `2.0.2` package resolves its Android `3.0.7` AAR through the plugin's Gradle configuration and its iOS framework through CocoaPods. Do not add a manual `nosmai-release.aar` or framework copy on top of this package. If an older guide or existing project contains a manual copy, inspect the resolved dependency graph before removing or retaining it; the final application must contain exactly one native SDK version.
 
 Set Android `minSdk` to at least 24. Set iOS to at least 15 and run CocoaPods:
 
